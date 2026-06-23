@@ -1,1 +1,1 @@
-# sistemas-operacionais-1sem-2026
+Conteudos de Aula Primeiro Semestre de Fudamentos de Programação Catolica SC

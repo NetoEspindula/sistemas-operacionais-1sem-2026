@@ -1,0 +1,241 @@
+﻿[
+    {
+        "Id": "5c992dda8148125116f9bcfe9877f1654da279ec09ba1189bdb87360d611b4f5",
+        "Created": "2026-06-14T03:08:11.419908834Z",
+        "Path": "docker-entrypoint.sh",
+        "Args": [
+            "node",
+            "server.js"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 1290,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-06-14T03:08:12.878846029Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:ec2788330daa77ba9b9c7778ed505b104388887c9d570337238b0b9ed864ef2d",
+        "ResolvConfPath": "/var/lib/docker/containers/5c992dda8148125116f9bcfe9877f1654da279ec09ba1189bdb87360d611b4f5/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/5c992dda8148125116f9bcfe9877f1654da279ec09ba1189bdb87360d611b4f5/hostname",
+        "HostsPath": "/var/lib/docker/containers/5c992dda8148125116f9bcfe9877f1654da279ec09ba1189bdb87360d611b4f5/hosts",
+        "LogPath": "/var/lib/docker/containers/5c992dda8148125116f9bcfe9877f1654da279ec09ba1189bdb87360d611b4f5/5c992dda8148125116f9bcfe9877f1654da279ec09ba1189bdb87360d611b4f5-json.log",
+        "Name": "/app-node",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "projeto-docker_rede-app",
+            "PortBindings": {
+                "3000/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "3000"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "unless-stopped",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": null,
+            "DnsOptions": null,
+            "DnsSearch": null,
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 134217728,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 67108864,
+            "MemorySwap": 268435456,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [],
+        "Config": {
+            "Hostname": "5c992dda8148",
+            "Domainname": "",
+            "User": "node",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "ExposedPorts": {
+                "3000/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "ALUNO=Valdemar Espindula Neto",
+                "PORT=3000",
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "NODE_VERSION=20.20.2",
+                "YARN_VERSION=1.22.22"
+            ],
+            "Cmd": [
+                "node",
+                "server.js"
+            ],
+            "Image": "projeto-docker-app",
+            "Volumes": null,
+            "WorkingDir": "/usr/src/app",
+            "Entrypoint": [
+                "docker-entrypoint.sh"
+            ],
+            "Labels": {
+                "com.docker.compose.config-hash": "eb7be03cd2bbc6031d458e28a94b1275360f4b059c997a90fcadffbd3a56319b",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "db:service_started:false",
+                "com.docker.compose.image": "sha256:ec2788330daa77ba9b9c7778ed505b104388887c9d570337238b0b9ed864ef2d",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "projeto-docker",
+                "com.docker.compose.project.config_files": "C:\\Users\\netoe\\Downloads\\N3 SO\\projeto-docker\\docker-compose.yml",
+                "com.docker.compose.project.working_dir": "C:\\Users\\netoe\\Downloads\\N3 SO\\projeto-docker",
+                "com.docker.compose.replace": "app-node",
+                "com.docker.compose.service": "app",
+                "com.docker.compose.version": "5.1.4"
+            },
+            "StopTimeout": 1
+        },
+        "NetworkSettings": {
+            "SandboxID": "aa570740fa7cfd627071f2f9fbf23ba75eba00cfc90e15e7d16555fcc0a29fb6",
+            "SandboxKey": "/var/run/docker/netns/aa570740fa7c",
+            "Ports": {
+                "3000/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "3000"
+                    },
+                    {
+                        "HostIp": "::",
+                        "HostPort": "3000"
+                    }
+                ]
+            },
+            "Networks": {
+                "projeto-docker_rede-app": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "app-node",
+                        "app"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "923cd8cb1208e7449937d072e5ab283f4fca52557627bbe1656df5ba6a81dd3b",
+                    "EndpointID": "96d25041ab63cb57a56d901d323b2393b3eff8a79cf24d611e15641fc4f971e9",
+                    "Gateway": "172.18.0.1",
+                    "IPAddress": "172.18.0.3",
+                    "MacAddress": "a2:63:f2:dd:84:d1",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "app-node",
+                        "app",
+                        "5c992dda8148"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:ab60ac089d6c146a82902d24d4b840e0ba6b044bbe651ed97a93d7d4a0c631a1",
+            "size": 2002,
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    }
+]

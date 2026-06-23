@@ -1,0 +1,40 @@
+services:
+  app:
+    build: ./app
+    container_name: app-node
+    restart: unless-stopped
+    environment:
+      - ALUNO=Valdemar Espindula Neto   
+      - PORT=3000
+    ports:
+      - "3000:3000"          # abre a porta 3000 pra acessar de fora
+    networks:
+      - rede-app           
+    mem_limit: 128m          # limite de 128 MB de memoria
+    mem_reservation: 64m
+    depends_on:
+      - db
+
+  # servico do banco de dados mysql
+  db:
+    image: mysql:8.0
+    container_name: db-mysql
+    restart: unless-stopped
+    environment:
+      - MYSQL_ROOT_PASSWORD=root123
+      - MYSQL_DATABASE=appdb
+      - MYSQL_USER=appuser
+      - MYSQL_PASSWORD=app123
+    networks:
+      - rede-app
+    volumes:
+      - dados-mysql:/var/lib/mysql   # volume pra nao perder os dados
+
+# minha rede
+networks:
+  rede-app:
+    driver: bridge
+
+# meu volume
+volumes:
+  dados-mysql:

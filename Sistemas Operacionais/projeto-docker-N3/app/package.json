@@ -1,0 +1,12 @@
+{
+  "name": "app-so-n3",
+  "version": "1.0.0",
+  "description": "Trabalho de Sistemas Operacionais N3",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

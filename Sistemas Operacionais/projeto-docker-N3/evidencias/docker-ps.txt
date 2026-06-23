@@ -1,0 +1,3 @@
+﻿CONTAINER ID   IMAGE                COMMAND                  CREATED         STATUS         PORTS                                         NAMES
+5c992dda8148   projeto-docker-app   "docker-entrypoint.s…"   8 seconds ago   Up 6 seconds   0.0.0.0:3000->3000/tcp, [::]:3000->3000/tcp   app-node
+f801e88c79ac   mysql:8.0            "docker-entrypoint.s…"   9 minutes ago   Up 9 minutes   3306/tcp, 33060/tcp                           db-mysql
